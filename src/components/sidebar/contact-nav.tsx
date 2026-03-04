@@ -98,7 +98,7 @@ export function ContactNav() {
       </Collapsible>
 
       <SidebarMenuItem>
-        <SidebarMenuButton tooltip="Contatos" className="text-center justify-center border">
+        <SidebarMenuButton tooltip="Direitos Reservados" className="text-center justify-center border">
           <span>© Todos os Direitos Reservados</span>
         </SidebarMenuButton>
       </SidebarMenuItem>
