@@ -24,38 +24,38 @@ const data = {
   navMain: [
     {
       title: "Inicio",
-      url: "#",
+      url: "",
       icon: Home,
     },
     {
       title: "Portfólio",
-      url: "#",
+      url: "",
       icon: LibraryBigIcon,
       isActive: true,
       items: [
         {
           title: "Automotivo",
-          url: "#",
+          url: "/portfolio/automotivo",
         },
         {
           title: "Eventos",
-          url: "#",
+          url: "/portfolio/eventos",
         },
       ],
     },
     {
-      title: "Sobre mim",
-      url: "#",
+      title: "Sobre Mim",
+      url: "/sobre",
       icon: UserStar,
     },
     {
       title: "Depoimentos",
-      url: "#",
+      url: "/depoimentos",
       icon: MessageCircleCheck,
     },
     {
       title: "Serviços",
-      url: "#",
+      url: "/serviços",
       icon: Wrench,
     },
   ],

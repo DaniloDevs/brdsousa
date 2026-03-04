@@ -1,26 +1,11 @@
-"use client"
+import { Camera } from "lucide-react"
 
-import * as React from "react"
-import { Camera, ChevronsUpDown, Plus } from "lucide-react"
-
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
 import {
   SidebarMenu,
   SidebarMenuButton,
-  SidebarMenuItem,
-  useSidebar,
 } from "@/components/ui/sidebar"
 
 export function HeaderSidebar() {
-  const { isMobile } = useSidebar()
 
   return (
     <SidebarMenu>
@@ -32,10 +17,9 @@ export function HeaderSidebar() {
           <Camera className="size-4" />
         </div>
         <div className="grid flex-1 text-left text-sm leading-tight">
-          <span className="truncate font-medium">Breno da Silva Sousa</span>
+          <span className="truncate font-medium">BRD SOUSA</span>
           <span className="truncate text-xs">Fotografo - VideoMaker</span>
         </div>
-        <ChevronsUpDown className="ml-auto" />
       </SidebarMenuButton>
     </SidebarMenu>
   )
