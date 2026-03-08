@@ -3,6 +3,7 @@ import carro2 from "@/assets/carro2.jpg";
 import carro4 from "@/assets/carro4.jpg";
 import pessoa1 from "@/assets/pessoa1.jpg";
 import carro5 from "@/assets/carro5.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,10 +40,12 @@ export default function Home() {
             </Button>
             <Button
               size="lg"
-              variant="outline"
+              variant="secondary"
               className="border-white/30 text-white hover:bg-white/10 "
             >
-              Solicitar Orçamento
+              <Link target="_blank" href={"https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento"}>
+                Solicitar Orçamento
+              </Link>
             </Button>
           </div>
         </div>

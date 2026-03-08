@@ -53,7 +53,7 @@ const socialLinks = [
   {
     icon: MessageCircle,
     label: 'WhatsApp',
-    url: 'https://wa.me',
+    url: 'https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento',
     color: 'hover:text-green-600',
   },
   {
