@@ -1,14 +1,19 @@
 import { Button } from "@/components/ui/button"
+import carro2 from "@/assets/carro2.jpg";
+import carro4 from "@/assets/carro4.jpg";
+import pessoa1 from "@/assets/pessoa1.jpg";
+import carro5 from "@/assets/carro5.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="inset-0 flex items-center justify-between">
+    <div className="my-auto inset-0 gap-15 lg:gap-0 flex lg:flex-row flex-col items-center justify-between">
       <div className="flex flex-col justify-center h-[80vh]">
         <div className="space-y-4">
           <div className="flex items-center gap-2 ">
             <div className="w-12 h-0.5 bg-linear-to-r from-white/50 to-white/20" />
             <p className="text-sm uppercase tracking-widest text-white/60 font-light">
-              Fotografia & Vídeo
+              Fotografia & produção audiovisual
             </p>
           </div>
 
@@ -22,7 +27,8 @@ export default function Home() {
           </div>
 
           <p className="text-base lg:text-lg text-white/60 leading-relaxed max-w-lg font-light">
-            Cada projeto é uma experiência imersiva. Especializado em fotografia comercial, retratos e produção audiovisual de alta qualidade que comunica sua essência.
+            Não é apenas sobre registrar momentos.
+            É sobre criar imagens que chamam atenção, contam uma história e elevam sua presença.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -34,38 +40,67 @@ export default function Home() {
             </Button>
             <Button
               size="lg"
-              variant="outline"
+              variant="secondary"
               className="border-white/30 text-white hover:bg-white/10 "
             >
-              Contato
+              <Link target="_blank" href={"https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento"}>
+                Solicitar Orçamento
+              </Link>
             </Button>
           </div>
         </div>
       </div>
 
       {/* Right Side - Image Showcase */}
-      <div className="hidden lg:flex w-1/2 h-full items-center justify-end pr-8">
-          <div className="relative w-96 h-96">
-            <div className="absolute inset-0 bg-linear-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-              <div
-                className="w-full h-full bg-cover bg-center"
-                style={{
-                  backgroundImage: `linear-gradient(45deg, #2a2a2a 0%, #1a1a1a 100%)`,
-                }}
-              />
-              <div className="absolute inset-0 flex items-center justify-center text-white/30">
-                <div className="text-center">
-                  <div className="text-6xl mb-2">📸</div>
-                  <p className="text-sm">Imagem do Portfólio</p>
-                </div>
-              </div>
-            </div>
+      <div className="hidden  md:grid grid-cols-2 grid-rows-3  lg:grid-cols-3 lg:grid-rows-4 gap-4 mx-auto w-full lg:w-1/2 h-full items-center">
+        <section className="relative h-full  rounded-2xl col-span-1 row-span-2 lg:col-span-1 lg:row-span-3">
+          <div className="absolute inset-0 bg-linear-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${carro2.src})`,
+              }}
+            />
 
-            <div className="absolute -top-8 -left-8 w-32 h-32 border border-white/10 rounded-lg transform -rotate-12 bg-black/20 backdrop-blur-sm" />
-
-            <div className="absolute -bottom-12 right-0 w-24 h-40 border border-white/10 rounded-xl bg-black/20 backdrop-blur-sm" />
           </div>
-        </div>
+        </section>
+
+        <section className="relative h-full rounded-2xl lg:col-span-2 lg:row-span-2">
+          <div className="absolute inset-0 bg-linear-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${pessoa1.src})`,
+              }}
+            />
+
+          </div>
+        </section>
+
+        <section className="relative h-full rounded-2xl lg:col-span-2">
+          <div className="absolute inset-0 bg-linear-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <div
+              className="w-full h-full bg-cover bg-no-repeat bg-center"
+              style={{
+                backgroundImage: `url(${carro4.src})`,
+              }}
+            />
+
+          </div>
+        </section>
+
+        <section className="relative h-full rounded-2xl col-span-2 lg:col-span-3">
+          <div className="absolute inset-0 bg-linear-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <div
+              className="w-full h-full bg-cover  bg-center "
+              style={{
+                backgroundImage: `url(${carro5.src})`,
+              }}
+            />
+
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

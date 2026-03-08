@@ -24,12 +24,12 @@ const data = {
   navMain: [
     {
       title: "Inicio",
-      url: "",
+      url: "/",
       icon: Home,
     },
     {
       title: "Portfólio",
-      url: "",
+      url: "Portifolio",
       icon: LibraryBigIcon,
       isActive: true,
       items: [
@@ -63,7 +63,7 @@ const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="icon" {...props}>
+    <Sidebar collapsible="icon" {...props} >
       <SidebarHeader>
         <HeaderSidebar />
       </SidebarHeader>
