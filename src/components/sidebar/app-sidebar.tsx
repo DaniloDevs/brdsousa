@@ -24,12 +24,12 @@ const data = {
   navMain: [
     {
       title: "Inicio",
-      url: "",
+      url: "/",
       icon: Home,
     },
     {
       title: "Portfólio",
-      url: "",
+      url: "Portifolio",
       icon: LibraryBigIcon,
       isActive: true,
       items: [
