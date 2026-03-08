@@ -52,7 +52,7 @@ export default function Home() {
       </div>
 
       {/* Right Side - Image Showcase */}
-      <div className=" grid grid-cols-2 grid-rows-3  lg:grid-cols-3 lg:grid-rows-4 gap-4 mx-auto w-full lg:w-1/2 h-full items-center">
+      <div className="hidden  md:grid grid-cols-2 grid-rows-3  lg:grid-cols-3 lg:grid-rows-4 gap-4 mx-auto w-full lg:w-1/2 h-full items-center">
         <section className="relative h-full  rounded-2xl col-span-1 row-span-2 lg:col-span-1 lg:row-span-3">
           <div className="absolute inset-0 bg-linear-to-br from-gray-900 to-black rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
             <div
