@@ -1,24 +1,24 @@
-'use client';
+"use client";
 
 export function AboutStyle() {
   const styles = [
     {
-      title: 'Corridas Automotivas',
+      title: "Corridas Automotivas",
       description:
-        'Captura especializada de velocidade, adrenalina e performance nas pistas. Domino técnicas avançadas de motion blur, freezing de ação e panning que transmitem movimento e intensidade.',
-      highlights: ['Motion Blur', 'Action Freezing', 'Panning', 'High-Speed'],
+        "Captura especializada de velocidade, adrenalina e performance nas pistas. Domino técnicas avançadas de motion blur, freezing de ação e panning que transmitem movimento e intensidade.",
+      highlights: ["Motion Blur", "Action Freezing", "Panning", "High-Speed"],
     },
     {
-      title: 'Shows e Eventos',
+      title: "Shows e Eventos",
       description:
-        'Documentação dinâmica de festivais, shows e eventos. Trabalho com iluminação ambiente complexa, captura de momentos espontâneos e emoção bruta, combinando timing perfeito com composição criativa.',
-      highlights: ['Iluminação Ambiente', 'Timing', 'Emoção', 'Dinâmica'],
+        "Documentação dinâmica de festivais, shows e eventos. Trabalho com iluminação ambiente complexa, captura de momentos espontâneos e emoção bruta, combinando timing perfeito com composição criativa.",
+      highlights: ["Iluminação Ambiente", "Timing", "Emoção", "Dinâmica"],
     },
     {
-       title: 'Outras Categorias',
+      title: "Outras Categorias",
       description:
-        'Excelência também em retratos, casamentos e lifestyle. Adaptando técnicas e abordagens conforme a natureza e contexto de cada projeto, mantendo qualidade profissional em todas as disciplinas.',
-      highlights: ['Retratos', 'Casamentos', 'Lifestyle', 'Corporativo'],
+        "Excelência também em retratos, casamentos e lifestyle. Adaptando técnicas e abordagens conforme a natureza e contexto de cada projeto, mantendo qualidade profissional em todas as disciplinas.",
+      highlights: ["Retratos", "Casamentos", "Lifestyle", "Corporativo"],
     },
   ];
 
@@ -36,8 +36,13 @@ export function AboutStyle() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {styles.map((style, index) => (
-            <div key={index} className="flex flex-col space-y-4 py-6 border-l-2 border-accent pl-6">
-              <h3 className="text-2xl font-light text-foreground">{style.title}</h3>
+            <div
+              key={index}
+              className="flex flex-col space-y-4 py-6 border-l-2 border-accent pl-6"
+            >
+              <h3 className="text-2xl font-light text-foreground">
+                {style.title}
+              </h3>
 
               <p className="text-foreground text-base font-light leading-relaxed">
                 {style.description}
@@ -60,11 +65,14 @@ export function AboutStyle() {
 
         {/* Philosophy */}
         <div className="mt-16 pt-12 border-t border-border">
-          <h3 className="text-2xl font-light text-foreground mb-4">Filosofia</h3>
+          <h3 className="text-2xl font-light text-foreground mb-4">
+            Filosofia
+          </h3>
           <p className="text-foreground text-lg font-light leading-relaxed max-w-3xl">
-            Acredito que cada evento, show e corrida tem uma narrativa de ação e emoção que merece
-            ser capturada com precisão técnica. Meu trabalho une criatividade visual com conhecimento
-            profundo de fotografia de ação. Cada imagem que entrego reflete paixão, expertise e
+            Acredito que cada evento, show e corrida tem uma narrativa de ação e
+            emoção que merece ser capturada com precisão técnica. Meu trabalho
+            une criatividade visual com conhecimento profundo de fotografia de
+            ação. Cada imagem que entrego reflete paixão, expertise e
             comprometimento em eternizar os momentos mais intensos e memoráveis.
           </p>
         </div>

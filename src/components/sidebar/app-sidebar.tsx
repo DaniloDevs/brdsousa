@@ -1,24 +1,23 @@
-"use client"
+"use client";
 
-import * as React from "react"
 import {
   Home,
   LibraryBigIcon,
   MessageCircleCheck,
   UserStar,
   Wrench,
-} from "lucide-react"
-
-import { NavMain } from "@/components/sidebar/nav-main"
-import { HeaderSidebar } from "@/components/sidebar/header-sidebar"
+} from "lucide-react";
+import type * as React from "react";
+import { HeaderSidebar } from "@/components/sidebar/header-sidebar";
+import { NavMain } from "@/components/sidebar/nav-main";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from "@/components/ui/sidebar"
-import { ContactNav } from "./contact-nav"
+} from "@/components/ui/sidebar";
+import { ContactNav } from "./contact-nav";
 
 const data = {
   navMain: [
@@ -63,21 +62,21 @@ const data = {
       icon: Wrench,
     },
   ],
-}
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar collapsible="icon" {...props} >
+    <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <HeaderSidebar />
       </SidebarHeader>
-      <SidebarContent >
+      <SidebarContent>
         <NavMain items={data.navMain} />
       </SidebarContent>
       <SidebarFooter>
-        <ContactNav  />
+        <ContactNav />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }

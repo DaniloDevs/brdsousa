@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
 import carro2 from "@/assets/automotivo/drift-rio/carro2.jpg";
 import carro4 from "@/assets/automotivo/drift-rio/carro4.jpg";
-import retrato from "@/assets/eventos/evento1.jpg";
 import carro5 from "@/assets/automotivo/drift-rio/carro5.jpg";
-import Link from "next/link";
+import retrato from "@/assets/eventos/evento1.jpg";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -27,8 +27,8 @@ export default function Home() {
           </div>
 
           <p className="text-base lg:text-lg text-white/60 leading-relaxed max-w-lg font-light">
-            Não é apenas sobre registrar momentos.
-            É sobre criar imagens que chamam atenção, contam uma história e elevam sua presença.
+            Não é apenas sobre registrar momentos. É sobre criar imagens que
+            chamam atenção, contam uma história e elevam sua presença.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -43,7 +43,12 @@ export default function Home() {
               variant="secondary"
               className="border-white/30 text-white hover:bg-white/10 "
             >
-              <Link target="_blank" href={"https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento"}>
+              <Link
+                target="_blank"
+                href={
+                  "https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento"
+                }
+              >
                 Solicitar Orçamento
               </Link>
             </Button>
@@ -61,7 +66,6 @@ export default function Home() {
                 backgroundImage: `url(${carro2.src})`,
               }}
             />
-
           </div>
         </section>
 
@@ -73,7 +77,6 @@ export default function Home() {
                 backgroundImage: `url(${retrato.src})`,
               }}
             />
-
           </div>
         </section>
 
@@ -85,7 +88,6 @@ export default function Home() {
                 backgroundImage: `url(${carro4.src})`,
               }}
             />
-
           </div>
         </section>
 
@@ -97,10 +99,9 @@ export default function Home() {
                 backgroundImage: `url(${carro5.src})`,
               }}
             />
-
           </div>
         </section>
       </div>
     </div>
-  )
+  );
 }

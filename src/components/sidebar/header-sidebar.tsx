@@ -1,12 +1,8 @@
-import { Camera } from "lucide-react"
+import { Camera } from "lucide-react";
 
-import {
-  SidebarMenu,
-  SidebarMenuButton,
-} from "@/components/ui/sidebar"
+import { SidebarMenu, SidebarMenuButton } from "@/components/ui/sidebar";
 
 export function HeaderSidebar() {
-
   return (
     <SidebarMenu>
       <SidebarMenuButton
@@ -22,5 +18,5 @@ export function HeaderSidebar() {
         </div>
       </SidebarMenuButton>
     </SidebarMenu>
-  )
+  );
 }

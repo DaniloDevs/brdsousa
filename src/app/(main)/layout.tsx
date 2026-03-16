@@ -1,14 +1,12 @@
-import { AppSidebar } from "@/components/sidebar/app-sidebar"
+import Link from "next/link";
+import { AppSidebar } from "@/components/sidebar/app-sidebar";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar"
-import Link from "next/link";
-
-
+} from "@/components/ui/sidebar";
 
 export default function layout({
   children,
@@ -32,15 +30,18 @@ export default function layout({
             variant="outline"
             className="border-white/30 text-white hover:bg-white/10 "
           >
-            <Link target="_blank" href={"https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento"}>
+            <Link
+              target="_blank"
+              href={
+                "https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento"
+              }
+            >
               Solicitar Orçamento
             </Link>
           </Button>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-          {children}
-        </div>
+        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">{children}</div>
       </SidebarInset>
     </SidebarProvider>
-  )
+  );
 }

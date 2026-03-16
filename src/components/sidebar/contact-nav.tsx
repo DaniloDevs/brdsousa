@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   BadgeCheck,
@@ -13,13 +13,10 @@ import {
   LogOut,
   MessageCircle,
   Sparkles,
-} from "lucide-react"
-
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar"
+} from "lucide-react";
+import Link from "next/link";
+import {} from "radix-ui";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -28,7 +25,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 import {
   SidebarMenu,
   SidebarMenuButton,
@@ -37,42 +34,44 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   useSidebar,
-} from "@/components/ui/sidebar"
-import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "../ui/tooltip"
-import { } from "radix-ui"
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "../ui/collapsible"
-import Link from "next/link"
+} from "@/components/ui/sidebar";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "../ui/collapsible";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
 
 const socialLinks = [
   {
     icon: Instagram,
-    label: 'Instagram',
-    url: 'https://instagram.com/brdsousa.fts',
-    color: 'hover:text-pink-600',
+    label: "Instagram",
+    url: "https://instagram.com/brdsousa.fts",
+    color: "hover:text-pink-600",
   },
   {
     icon: MessageCircle,
-    label: 'WhatsApp',
-    url: 'https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento',
-    color: 'hover:text-green-600',
+    label: "WhatsApp",
+    url: "https://wa.me/5521994557464?text=ola%2C%20gostaria%20de%20fazer%20um%20orcamento",
+    color: "hover:text-green-600",
   },
   {
     icon: CameraIcon,
-    label: 'Balenk',
-    url: 'https://banlek.com/brdsousafts',
-    color: 'hover:text-blue-600',
+    label: "Balenk",
+    url: "https://banlek.com/brdsousafts",
+    color: "hover:text-blue-600",
   },
-]
+];
 
 export function ContactNav() {
-
   return (
     <SidebarMenu className="gap-4">
-      <Collapsible
-        asChild
-        defaultOpen={true}
-        className="group/collapsible"
-      >
+      <Collapsible asChild defaultOpen={true} className="group/collapsible">
         <SidebarMenuItem>
           <CollapsibleTrigger asChild>
             <SidebarMenuButton tooltip="Contatos">
@@ -98,11 +97,13 @@ export function ContactNav() {
       </Collapsible>
 
       <SidebarMenuItem>
-        <SidebarMenuButton tooltip="Direitos Reservados" className="text-center justify-center border">
+        <SidebarMenuButton
+          tooltip="Direitos Reservados"
+          className="text-center justify-center border"
+        >
           <span>© Todos os Direitos Reservados</span>
         </SidebarMenuButton>
       </SidebarMenuItem>
-
     </SidebarMenu>
-  )
+  );
 }
