@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button"
-import carro2 from "@/assets/carro2.jpg";
-import carro4 from "@/assets/carro4.jpg";
-import pessoa1 from "@/assets/pessoa1.jpg";
-import carro5 from "@/assets/carro5.jpg";
+import carro2 from "@/assets/automotivo/drift-rio/carro2.jpg";
+import carro4 from "@/assets/automotivo/drift-rio/carro4.jpg";
+import retrato from "@/assets/eventos/evento1.jpg";
+import carro5 from "@/assets/automotivo/drift-rio/carro5.jpg";
 import Link from "next/link";
 
 export default function Home() {
@@ -70,7 +70,7 @@ export default function Home() {
             <div
               className="w-full h-full bg-cover bg-center"
               style={{
-                backgroundImage: `url(${pessoa1.src})`,
+                backgroundImage: `url(${retrato.src})`,
               }}
             />
 

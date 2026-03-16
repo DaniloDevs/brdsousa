@@ -1,4 +1,4 @@
-import breno from "@/assets/breno.jpg";
+import breno from "@/assets/breno/breno.jpg";
 import Image from 'next/image';
 
 export function AboutHero() {

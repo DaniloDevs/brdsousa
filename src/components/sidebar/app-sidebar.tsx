@@ -28,18 +28,22 @@ const data = {
       icon: Home,
     },
     {
-      title: "Portfólio",
-      url: "Portifolio",
+      title: "Galeria",
+      url: "galeria",
       icon: LibraryBigIcon,
       isActive: true,
       items: [
         {
           title: "Automotivo",
-          url: "/portfolio/automotivo",
+          url: "/galeria/automotivo",
         },
         {
           title: "Eventos",
-          url: "/portfolio/eventos",
+          url: "/galeria/eventos",
+        },
+        {
+          title: "Retratos",
+          url: "/galeria/retratos",
         },
       ],
     },
@@ -67,7 +71,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <HeaderSidebar />
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent >
         <NavMain items={data.navMain} />
       </SidebarContent>
       <SidebarFooter>
