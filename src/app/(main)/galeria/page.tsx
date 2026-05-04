@@ -17,7 +17,8 @@ export default function GalleryPage() {
               Explore Nosso Trabalho
             </h2>
             <p className="mt-4 text-muted-foreground max-w-2xl text-balance">
-              Uma seleção curada de momentos capturados através das lentes, organizados por categorias para facilitar sua exploração.
+              Uma seleção curada de momentos capturados através das lentes,
+              organizados por categorias para facilitar sua exploração.
             </p>
           </div>
         </div>

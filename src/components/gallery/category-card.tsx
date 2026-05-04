@@ -34,19 +34,19 @@ export function CategoryCard({ category }: CategoryCardProps) {
             height={1000}
             className={cn(
               "w-full h-auto object-cover transition-transform duration-700 ease-out",
-              isHovered ? "scale-105" : "scale-100"
+              isHovered ? "scale-105" : "scale-100",
             )}
           />
-          
+
           {/* Base Gradient (Always visible for Title readability) */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
 
           {/* Hover Overlay (Extra darkening on hover) */}
-          <div 
+          <div
             className={cn(
               "absolute inset-0 bg-black/40 transition-opacity duration-500",
-              isHovered ? "opacity-100" : "opacity-0"
-            )} 
+              isHovered ? "opacity-100" : "opacity-0",
+            )}
           />
         </div>
 
@@ -59,14 +59,14 @@ export function CategoryCard({ category }: CategoryCardProps) {
             <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-white">
               {category.title}
             </h3>
-            
+
             {/* Description - Visible on Hover */}
             <p
               className={cn(
                 "text-xs sm:text-sm text-white/80 leading-relaxed transition-all duration-500 max-w-[90%]",
                 isHovered
                   ? "opacity-100 translate-y-0 max-h-20 mt-2"
-                  : "opacity-0 translate-y-4 max-h-0"
+                  : "opacity-0 translate-y-4 max-h-0",
               )}
             >
               {category.description}
@@ -82,7 +82,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
                   "flex items-center text-[10px] sm:text-xs text-white font-medium transition-all duration-300",
                   isHovered
                     ? "opacity-100 translate-x-0"
-                    : "opacity-0 -translate-x-4"
+                    : "opacity-0 -translate-x-4",
                 )}
               >
                 Explorar <ArrowRight className="ml-1 h-3 w-3" />

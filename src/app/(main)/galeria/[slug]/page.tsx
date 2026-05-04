@@ -28,7 +28,11 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <main className="min-h-screen py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Navigation */}
       <div className="mb-8">
-        <Button variant="ghost" asChild className="-ml-4 text-muted-foreground hover:text-foreground">
+        <Button
+          variant="ghost"
+          asChild
+          className="-ml-4 text-muted-foreground hover:text-foreground"
+        >
           <Link href="/galeria" className="flex items-center gap-2">
             <ArrowLeft size={16} />
             Voltar para Galeria
@@ -52,7 +56,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       {/* Uniform Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {photos.map((photo) => (
-          <div key={photo.id} className="relative aspect-square overflow-hidden rounded-lg bg-muted group">
+          <div
+            key={photo.id}
+            className="relative aspect-square overflow-hidden rounded-lg bg-muted group"
+          >
             <Image
               src={photo.url}
               alt={photo.alt}

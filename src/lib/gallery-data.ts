@@ -10,7 +10,8 @@ export const categories: Category[] = [
     slug: "automotivo",
     title: "Automotivos",
     subtitle: "Máquinas em movimento",
-    description: "Potência, design e personalidade capturados em imagens que revelam a presença de cada veículo nas ruas.",
+    description:
+      "Potência, design e personalidade capturados em imagens que revelam a presença de cada veículo nas ruas.",
     coverImage: carro.src,
     photoCount: 48,
   },
@@ -19,7 +20,8 @@ export const categories: Category[] = [
     slug: "paisagem",
     title: "Paisagens",
     subtitle: "Natureza grandiosa",
-    description: "Exploramos a majestade da natureza, desde montanhas imponentes até o delicado nascer do sol sobre vales serenos.",
+    description:
+      "Exploramos a majestade da natureza, desde montanhas imponentes até o delicado nascer do sol sobre vales serenos.",
     coverImage: paisagem.src,
     photoCount: 72,
   },
@@ -28,7 +30,8 @@ export const categories: Category[] = [
     slug: "eventos",
     title: "Eventos",
     subtitle: "A alma revelada",
-    description: "Capturamos a essência de cada pessoa através de retratos que revelam personalidade, emoção e história única.",
+    description:
+      "Capturamos a essência de cada pessoa através de retratos que revelam personalidade, emoção e história única.",
     coverImage: evento.src,
     photoCount: 72,
   },
@@ -37,7 +40,8 @@ export const categories: Category[] = [
     slug: "retratos",
     title: "Retratos",
     subtitle: "A alma revelada",
-    description: "Capturamos a essência de cada pessoa através de retratos que revelam personalidade, emoção e história única.",
+    description:
+      "Capturamos a essência de cada pessoa através de retratos que revelam personalidade, emoção e história única.",
     coverImage: retrato.src,
     photoCount: 72,
   },
