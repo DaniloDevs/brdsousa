@@ -37,7 +37,6 @@ export function NavMain({
       <SidebarGroupLabel>Plataforma</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
-
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip={item.title}>
               <Link href={item.url}>
