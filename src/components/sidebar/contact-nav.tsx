@@ -1,31 +1,13 @@
 "use client";
 
 import {
-  BadgeCheck,
-  Bell,
-  Bot,
   CameraIcon,
   ChevronRight,
-  ChevronsUpDown,
   Contact,
-  CreditCard,
   Instagram,
-  LogOut,
   MessageCircle,
-  Sparkles,
 } from "lucide-react";
 import Link from "next/link";
-import {} from "radix-ui";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import {
   SidebarMenu,
   SidebarMenuButton,
@@ -33,19 +15,12 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
-  useSidebar,
 } from "@/components/ui/sidebar";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "../ui/collapsible";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../ui/tooltip";
 
 const socialLinks = [
   {
