@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import {
   Home,
@@ -58,7 +58,7 @@ const data = {
     },
     {
       title: "Serviços",
-      url: "/serviços",
+      url: "/servicos",
       icon: Wrench,
     },
   ],

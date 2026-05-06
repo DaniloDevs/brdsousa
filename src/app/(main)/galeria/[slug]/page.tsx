@@ -1,9 +1,9 @@
-import { categories } from "@/lib/gallery-data";
-import { notFound } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { categories } from "@/lib/gallery-data";
 
 interface CategoryPageProps {
   params: Promise<{ slug: string }>;

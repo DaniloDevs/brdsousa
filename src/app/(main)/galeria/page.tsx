@@ -1,7 +1,7 @@
 "use client";
 
-import { categories } from "@/lib/gallery-data";
 import { CategoryCard } from "@/components/gallery/category-card";
+import { categories } from "@/lib/gallery-data";
 
 export default function GalleryPage() {
   return (

@@ -1,12 +1,11 @@
 "use client";
 
-import { Category } from "@/types/gallery";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import type { Category } from "@/types/gallery";
 
 interface CategoryCardProps {
   category: Category;

@@ -1,8 +1,8 @@
-import type { Category } from "@/types/gallery";
 import carro from "@/assets/Automotivo/drift-rio/carro2.jpg";
 import evento from "@/assets/eventos/evento1.jpg";
 import paisagem from "@/assets/paisagem/paisagem.jpg";
 import retrato from "@/assets/retratos/retrato1.jpg";
+import type { Category } from "@/types/gallery";
 
 export const categories: Category[] = [
   {
